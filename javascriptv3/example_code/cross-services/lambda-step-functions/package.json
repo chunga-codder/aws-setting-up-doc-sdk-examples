@@ -7,10 +7,10 @@
   "author": "brmur",
   "license": "Apache 2.0",
   "scripts": {
-    "build-lambda-1": "webpack getid.js --mode development --target node --devtool false --output-library-target umd -o index.js",
-    "build-lambda-2": "webpack additem.js --mode development --target node --devtool false --output-library-target umd -o index.js",
-    "build-lambda-3": "webpack sendemail.js --mode development --target node --devtool false --output-library-target umd -o index.js",
-    "build-cdk": "aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM",
+    "build-lambda-1": "node init && webpack getid.js --mode development --target node --devtool false --output-library-target umd -o index.js",
+    "build-lambda-2": "node init && webpack additem.js --mode development --target node --devtool false --output-library-target umd -o index.js",
+    "build-lambda-3": "node init && webpack sendemail.js --mode development --target node --devtool false --output-library-target umd -o index.js",
+    "build-cdk": "node init && aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM",
     "test": "exit 0"
   },
   "dependencies": {

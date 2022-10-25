@@ -5,7 +5,7 @@
     "redshift_item_tracker": "bin/redshift_item_tracker.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"

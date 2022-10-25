@@ -7,8 +7,8 @@
   "author": "brmur",
   "license": "Apache 2.0",
   "scripts": {
-    "build:frontend": "webpack frontend-js/index.js --mode development --target web --devtool false --output-library-target umd -o frontend-js/main.js",
-    "build:backend": "webpack backend-js/lambda.js --mode development --target node --devtool false  -o backend-js/index.js",
+    "build:frontend": "node init && webpack frontend-js/index.js --mode development --target web --devtool false --output-library-target umd -o frontend-js/main.js",
+    "build:backend": "node init && webpack backend-js/lambda.js --mode development --target node --devtool false  -o backend-js/index.js",
     "test": "exit 0"
   },
   "dependencies": {
