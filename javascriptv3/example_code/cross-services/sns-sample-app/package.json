@@ -6,8 +6,8 @@
   "author": "Brian Murray <brmur@amazon.com>, Alex Forsyth <alex-git@amazon.com>",
   "license": "Apache 2.0",
   "scripts": {
-    "build": "webpack ./js/index.js --mode development --target web --devtool false -o ./js/main.js",
-    "build-cdk": "aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM",
+    "build": "node init && webpack ./js/index.js --mode development --target web --devtool false -o ./js/main.js",
+    "build-cdk": "node init && aws cloudformation create-stack --stack-name STACK_NAME --template-body file://setup.yaml --capabilities CAPABILITY_IAM",
     "test": "exit 0"
   },
   "dependencies": {

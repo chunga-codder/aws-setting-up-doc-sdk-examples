@@ -5,7 +5,7 @@
     "iam-ruby-example-add-new-user": "bin/iam-ruby-example-add-new-user.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"

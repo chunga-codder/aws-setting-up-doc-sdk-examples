@@ -7,7 +7,7 @@
   "author": "Brian Murray <brmur@amazon.com>, Alex Forsyth <alex-git@amazon.com>",
   "license": "Apache 2.0",
   "scripts": {
-    "build:frontend": "webpack add_data.js --mode development --target web --devtool false -o main.js",
+    "build:frontend": "node init && webpack add_data.js --mode development --target web --devtool false -o main.js",
     "test": "exit 0"
   },
   "dependencies": {

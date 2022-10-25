@@ -7,7 +7,7 @@
   "author": "brmur",
   "license": "Apache 2.0",
   "scripts": {
-    "build": "webpack --config ./webpack.config.cjs",
+    "build": "node init && webpack --config ./webpack.config.cjs",
     "test": "exit 0"
   },
   "dependencies": {

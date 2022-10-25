@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "kinesis-example.js",
   "scripts": {
-    "build": "webpack kinesis-example.js --mode development --target web --devtool false -o main.js",
+    "build": "node init && webpack kinesis-example.js --mode development --target web --devtool false -o main.js",
     "test": "exit 0"
   },
   "repository": "git@github.com/awsdocs/aws-doc-sdk-examples/tree/master/javascriptv3/example_code/kinesis.git",

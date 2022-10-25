@@ -5,7 +5,7 @@
     "setup": "setup.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
@@ -28,6 +28,6 @@
     "@aws-cdk/aws-iam": "^1.87.1",
     "@aws-cdk/aws-dynamodb": "^1.87.1",
     "@aws-cdk/aws-lambda": "^1.87.1",
-    "@aws-cdk/custom-resources":"^1.87.1"
+    "@aws-cdk/custom-resources": "^1.87.1"
   }
 }
